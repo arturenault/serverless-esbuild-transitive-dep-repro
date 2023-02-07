@@ -1,0 +1,17 @@
+service: service
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  function1:
+    handler: index.handler
+
+custom:
+  esbuild:
+    config: esbuild.config.js
+
+plugins:
+  - serverless-esbuild

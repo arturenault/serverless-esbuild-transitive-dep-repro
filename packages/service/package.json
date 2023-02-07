@@ -1,0 +1,19 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "serverless package"
+  },
+  "dependencies": {
+    "localPackage": "1.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15",
+    "esbuild-node-externals": "^1.6.0",
+    "serverless": "^3.27.0",
+    "serverless-esbuild": "^1.37.3"
+  }
+}
